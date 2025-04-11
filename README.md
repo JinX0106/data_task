@@ -223,32 +223,42 @@ Download simulate_raw_data.do and analysis.do files. Modify the file path. Then 
 
 ### Data Simulation
 1. Set up conditions for baseline survey.
+
 Setting up required number of observations and seed for consistent random results.
 
 2. Generate key variables.
+
 Generate variables such as id, age, female, non_white, edu_yrs, social_media, baseline covid uptake, income. Then set each variable into appropriate range. For example, education was set to be within the range of 6 and 22 with mean of 12; similarly, income was categorized into three level with majority of population lie on the second level.
 
-3. Randomize treatment.
+4. Randomize treatment.
+
 Keep variable id, and then randomly assign treatments.
 
 4. Generate endline survey.
+
 Randomly drop 500 observation as designated. Then, merge the baseline data with the treatment data, and then generate endline covid uptake variable.
 
 5. Generate other variables for further analysis
+
 Generate variables like advertisment recall rate and attitude changes for future analysis.
 
 ### Data Analysis
 1. Merge Data
+
 Merge the data sets using id, then keep the matched observations, so leaving 4500 sample points.
 
 2. Descriptive statistics
+
 Generate a table indicating mean value among different treatment groups.
 
 3. Comparison
+
 Using t test to evaluate the difference among treated and control groups.
 
 4. Data visualization
+
 Generate a bar graph to visualize the effectiveness of the treatments comparing to the control group.
 
 5. Regression analysis
+
 Using logistic regression, we found that reason advertisment group is 1.46 times more frequent in COVID uptake; emotional advertisement is 1.2 times.
