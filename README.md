@@ -261,12 +261,5 @@ Generate a bar graph to visualize the effectiveness of the treatments comparing 
 
 5. Regression analysis
 
-Using logistic regression, we found that reason advertisment group is 1.46 times more frequent in COVID uptake; emotional advertisement is 1.2 times.
-
----------------------------------------------------------------------------------
-covid_uptake_el | Odds ratio   Std. err.      z    P>|z|     [95% conf. interval]
-----------------+----------------------------------------------------------------
-      treatment |
-     Reason Ad  |   1.456099   .1074351     5.09   0.000     1.260048    1.682655
-    Emotion Ad  |   1.202309   .0889429     2.49   0.013     1.040033    1.389905
+Using logistic regression, we found that reason advertisment group is 1.46 times more frequent in COVID uptake; emotional advertisement is 1.2 times, and advertisements have statistically significant impact on COVID uptake.
 
