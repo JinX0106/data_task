@@ -222,44 +222,42 @@ Download simulate_raw_data.do and analysis.do files. Modify the file path. Then 
 ## Logic
 
 ### Data Simulation
-1. Set up conditions for baseline survey.
+1. Set up conditions for the baseline survey.
 
-Setting up required number of observations and seed for consistent random results.
+Setting up the required number of observations and seeds for consistent random results.
 
 2. Generate key variables.
 
-Generate variables such as id, age, female, non_white, edu_yrs, social_media, baseline covid uptake, income. Then set each variable into appropriate range. For example, education was set to be within the range of 6 and 22 with mean of 12; similarly, income was categorized into three level with majority of population lie on the second level.
+Generate variables such as ID, age, female, non_white, edu_yrs, social_media, baseline covid uptake, and income. Then set each variable into an appropriate range. For example, education was set to be within the range of 6 and 22 with a mean of 12; similarly, income was categorized into three levels with the majority of the population lying on the second level.
 
-4. Randomize treatment.
+3. Randomize treatment.
 
-Keep variable id, and then randomly assign treatments.
+Keep variable ID, and then randomly assign treatments.
 
-4. Generate endline survey.
+4. Generate end-line survey.
 
-Randomly drop 500 observation as designated. Then, merge the baseline data with the treatment data, and then generate endline covid uptake variable.
+Randomly drop 500 observations as designated. Then, merge the baseline data with the treatment data, and generate the end-line COVID uptake variable.
 
-5. Generate other variables for further analysis
+5. Generate other variables for further analysis.
 
-Generate variables like advertisment recall rate and attitude changes for future analysis.
+Generate variables like advertisement recall rate and attitude changes for future analysis.
 
 ### Data Analysis
 1. Merge Data
 
-Merge the data sets using id, then keep the matched observations, so leaving 4500 sample points.
-
+Merge the data sets using id, then keep the matched observations, leaving 4500 sample points.
 2. Descriptive statistics
 
-Generate a table indicating mean value among different treatment groups.
+Generate a table indicating the mean value among different treatment groups.
 
 3. Comparison
 
-Using t test to evaluate the difference among treated and control groups.
+T-tests were used to evaluate the difference between the treated and control groups.
 
 4. Data visualization
 
-Generate a bar graph to visualize the effectiveness of the treatments comparing to the control group.
+Generate a bar graph to visualize the effectiveness of the treatments compared to the control group.
 
 5. Regression analysis
 
-Using logistic regression, we found that reason advertisment group is 1.46 times more frequent in COVID uptake; emotional advertisement is 1.2 times, and advertisements have statistically significant impact on COVID uptake.
-
+Using logistic regression, we found that the reason advertisement group is 1.46 times more frequent in COVID uptake; emotional advertisement is 1.2 times more, and advertisements have a statistically significant impact on COVID uptake.
